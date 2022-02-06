@@ -1,0 +1,19 @@
+body {
+  color: red;
+  border: 2px solid red;
+}
+
+h1 {
+  color: blue;
+  border: inherit;
+}
+
+span {
+  color: grey;
+}
+
+b {
+  color: yellow;
+  # Negativbeispiel (b erbt border von span, die aber nichts definiert hat)
+  border: inherit;
+}
