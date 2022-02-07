@@ -1,6 +1,17 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 #absolut {
   width: 300px;
   height: 300px;
   font-size: 20px;
   background-color: #F00
+}
+
+#prozent {
+  width: 20%;
+  height: 20%;
+  background-color: #0F0;
 }
