@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Emmet-Syntax</title>
+	</head>
+
+	<body>
+    <!-- Einfache Elemente -->
+    div
+    <div></div>
+
+    <!-- Mehrfafche elemente -->
+    div*3
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- Elemente mit Class -->
+    div.test
+    <div class="test"></div>
+
+    <!-- Elemente mit ID -->
+    div#test
+    <div id="test"></div>
+
+    <!-- Elemente mit Kindelementen -->
+    div>h1
+    <div>
+      <h1></h1>
+    </div>
+
+    <!-- Elemente mit Geschwisterelementen -->
+    div+h1
+    <div></div>
+    <h1></h1>
+
+    <!-- Die Hierarchie aufsteigen -->
+    div>h1^p
+    <div>
+      <h1></h1>
+    </div>
+    <p></p>
+
+    <!-- Elemente mit Inhalt -->
+    div{Emmet ist voll super!}
+    <div>Emmet ist voll super!</div>
+	</body>
+
+</html>
