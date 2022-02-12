@@ -1,8 +1,32 @@
+/* FARBEN
+Blau:         #1F4E8C
+Dunkel Grau:  #3D3F45
+Hell Grau:    #E5E5E5
+Rot:          #A62C21
+*/
+
 body {
   margin: 0;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* NAVIGATIONSLEISTE */
+.header-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #3D3F45;
+  position: relative;
+}
+
+.header-nav > img {
+  height: 30px;
+  width: auto;
+  position: absolute;
+  left: 2rem;
+  top: .55rem;
 }
