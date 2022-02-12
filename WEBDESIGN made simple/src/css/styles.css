@@ -21,6 +21,8 @@ body {
   height: 50px;
   background-color: #3D3F45;
   position: relative;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .header-nav > img {
@@ -29,4 +31,36 @@ body {
   position: absolute;
   left: 2rem;
   top: .55rem;
+}
+
+.header-nav > ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 2rem;
+  top: .85rem;
+}
+
+.header-nav > ul > li {
+  display: inline-block;
+}
+
+.header-nav > ul > li > a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.header-nav > ul > li > a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.header-nav > ul > li > a:hover {
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+.header-nav > ul > li > a:active {
+  color: #E5E5E5;
+  text-decoration: none;
 }
