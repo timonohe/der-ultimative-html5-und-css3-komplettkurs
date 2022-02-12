@@ -12,3 +12,18 @@ div {
 #test02 {
   background-image: url(hintergrund.png);
 }
+
+#test03 {
+  background-image: url(hintergrund.png);
+  background-repeat: repeat-x;
+}
+
+#test04 {
+  background-image: url(hintergrund.png);
+  background-repeat: repeat-y;
+}
+
+#test05 {
+  background-image: url(hintergrund.png);
+  background-repeat: no-repeat;
+}
