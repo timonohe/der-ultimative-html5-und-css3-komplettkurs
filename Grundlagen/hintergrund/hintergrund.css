@@ -50,3 +50,19 @@ div {
   background-image: url(hintergrund.png);
   background-attachment: fixed;
 }
+
+/*
+BISHER:
+background-color:
+background-image:
+background-repeat:
+background-attachment:
+background-position:
+
+JETZT:
+background: color image repeat attachment position;
+*/
+
+#test10 {
+  background: #EE45F3 url(hintergrund.png) repeat-y fixed 20px 30px;
+}
