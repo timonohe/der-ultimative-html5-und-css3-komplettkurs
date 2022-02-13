@@ -27,3 +27,21 @@ div {
   background-image: url(hintergrund.png);
   background-repeat: no-repeat;
 }
+
+#test06 {
+  background-image: url(hintergrund.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#test07 {
+  background-image: url(hintergrund.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#test08 {
+  background-image: url(hintergrund.png);
+  background-repeat: no-repeat;
+  background-position: right 200px bottom 300px;
+}
