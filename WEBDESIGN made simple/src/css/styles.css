@@ -80,7 +80,16 @@ body {
 /* HEADER-BANNER */
 
 .header-banner {
-  background: url("../img/hintergrund.jpg") no-repeat center center;
+  background: url("../img/hintergrund.jpg") no-repeat;
   width: 100%;
-  height: auto;
+  height: 0;
+  padding-top: 20.83%;
+  background-size: contain;
 }
+
+/*
+  1920px x 400px
+  1000px x ????
+  Wie viel % von 1920px sind 400px?
+  400px / 1920px * 100 = 20.83%
+*/
