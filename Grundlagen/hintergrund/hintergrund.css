@@ -45,3 +45,8 @@ div {
   background-repeat: no-repeat;
   background-position: right 200px bottom 300px;
 }
+
+#test09 {
+  background-image: url(hintergrund.png);
+  background-attachment: fixed;
+}
