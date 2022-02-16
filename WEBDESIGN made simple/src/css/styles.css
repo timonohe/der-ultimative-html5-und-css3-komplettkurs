@@ -116,7 +116,13 @@ body {
   display: block;
 }
 
-.row {
-  height: 200px;
-  background-color: grey;
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: .8rem;
 }
+
+.col-1 { width: 16.666%; }
+.col-2 { width: 33.333%; }
+.col-3 { width: 50%; }
+.col-6 { width: 100%; }
