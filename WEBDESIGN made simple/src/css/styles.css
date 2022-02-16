@@ -165,6 +165,5 @@ WICHTIGE BREAKPOINTS
 }
 
 @media (max-width: 480px) {
-  .col-1 { width: 100%; }
-  .col-2, .col-3 { width: 100%; }
+  .col-1, .col-2, .col-3 { width: 100%; }
 }
