@@ -101,3 +101,11 @@ body {
   padding-top: 15.625%;
   background-size: contain;
 }
+
+/* GRID-SYSTEM */
+
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
