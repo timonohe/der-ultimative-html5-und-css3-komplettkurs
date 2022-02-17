@@ -86,6 +86,25 @@ body {
   background-color: #A62C21;
 }
 
+/* NAVIGATIONSLEISTE (MOBIL) */
+
+.mobile-nav-button {
+  color: #FFF;
+  float: right;
+  font-size: 2rem;
+  border: 2px solid #FFF;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  margin-top: .4rem;
+}
+
+.mobile-nav-button > span {
+  position: absolute;
+  bottom: -3px;
+  left: 7px;
+}
+
 /* HEADER-BANNER */
 
 .header-banner {
