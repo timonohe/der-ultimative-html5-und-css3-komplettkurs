@@ -5,6 +5,8 @@ Hell Grau:    #E5E5E5
 Rot:          #A62C21
 */
 
+/* GLOBAL */
+
 body {
   margin: 0;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
@@ -13,6 +15,14 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+/* GENERELLES */
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 /* NAVIGATIONSLEISTE */
@@ -88,6 +98,10 @@ body {
 
 /* NAVIGATIONSLEISTE (MOBIL) */
 
+.mobile-nav-dropdown {
+  position: relative;
+}
+
 .mobile-nav-button {
   color: #FFF;
   float: right;
@@ -105,11 +119,18 @@ body {
   left: 7px;
 }
 
+.mobile-nav-content {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
 .mobile-nav-content > ul > li {
   display: block;
-  background-color: #3D3F45;
+  background-color: red;
   height: 50px;
   padding: 0 1.2rem;
+  text-align: center;
 }
 
 /* HEADER-BANNER */
