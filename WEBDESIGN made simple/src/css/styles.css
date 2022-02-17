@@ -142,6 +142,20 @@ body {
   text-align: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
 /* HEADER-BANNER */
 
 .header-banner {
