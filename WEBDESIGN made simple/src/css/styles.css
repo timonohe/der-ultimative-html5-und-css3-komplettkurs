@@ -25,6 +25,10 @@ body {
   clear: both;
 }
 
+.active {
+  background-color: #A62C21 !important;
+}
+
 /* NAVIGATIONSLEISTE */
 
 .header-nav {
@@ -92,14 +96,17 @@ body {
   height: 100%;
 }
 
-.active {
-  background-color: #A62C21;
-}
-
 /* NAVIGATIONSLEISTE (MOBIL) */
 
 .mobile-nav-dropdown {
+  cursor: pointer;
   position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
 }
 
 .mobile-nav-button {
@@ -111,6 +118,7 @@ body {
   height: 37px;
   position: relative;
   margin-top: .4rem;
+  margin-bottom: 7px;
 }
 
 .mobile-nav-button > span {
@@ -123,11 +131,12 @@ body {
   position: absolute;
   right: 0;
   top: 50px;
+  display: none;
 }
 
 .mobile-nav-content > ul > li {
   display: block;
-  background-color: red;
+  background-color: #3D3F45;
   height: 50px;
   padding: 0 1.2rem;
   text-align: center;
