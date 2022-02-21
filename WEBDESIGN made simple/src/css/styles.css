@@ -181,6 +181,13 @@ body {
   background-size: contain;
 }
 
+/* NEWSLETTER-BEREICH */
+
+.newsletter-bereich {
+  width: 100%;
+  background-color: #3D3F45;
+}
+
 /*
   GRID-SYSTEM (SICHTBARKEIT)
 
@@ -224,6 +231,7 @@ body {
 .col-1 { width: 16.666%; }
 .col-2 { width: 33.333%; }
 .col-3 { width: 50%; }
+.col-4 { width: 66.666%; }
 .col-6 { width: 100%; }
 
 /*
@@ -242,9 +250,9 @@ WICHTIGE BREAKPOINTS
 
 @media (max-width: 768px) {
   .col-1 { width: 50%; }
-  .col-2, .col-3 { width: 100%; }
+  .col-2, .col-3, .col-4 { width: 100%; }
 }
 
 @media (max-width: 480px) {
-  .col-1, .col-2, .col-3 { width: 100%; }
+  .col-1, .col-2, .col-3, .col-4 { width: 100%; }
 }
