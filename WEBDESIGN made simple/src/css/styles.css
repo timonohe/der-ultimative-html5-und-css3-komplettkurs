@@ -29,6 +29,14 @@ body {
   background-color: #A62C21 !important;
 }
 
+.wichtiger-text {
+  font-weight: bold;
+}
+
+.screenreader {
+  display: none;
+}
+
 /* NAVIGATIONSLEISTE */
 
 .header-nav {
@@ -186,6 +194,18 @@ body {
 .newsletter-bereich {
   width: 100%;
   background-color: #3D3F45;
+}
+
+#nb-werbetext {
+  color: #FFF;
+  font-size: 1.2rem;
+}
+
+.nb-email-input {
+  width: 60%;
+  height: 35px;
+  border: 2px solid #FFF;
+  padding: .4rem;
 }
 
 /*
