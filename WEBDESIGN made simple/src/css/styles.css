@@ -37,6 +37,14 @@ body {
   display: none;
 }
 
+.btn-typ-1 {
+  background-color: #A62C21;
+  border: 2px solid #A62C21;
+  color: #FFF;
+  padding: .4rem .6rem;
+  cursor: pointer;
+}
+
 /* NAVIGATIONSLEISTE */
 
 .header-nav {
@@ -201,11 +209,21 @@ body {
   font-size: 1.2rem;
 }
 
+#nb-form {
+  margin-top: .7rem;
+  width: 100%;
+  text-align: right;
+}
+
 .nb-email-input {
-  width: 60%;
+  width: 78%;
   height: 35px;
   border: 2px solid #FFF;
   padding: .4rem;
+}
+
+#nb-btn {
+  height: 35px;
 }
 
 /*
