@@ -1,0 +1,17 @@
+:root {
+  font-size: 25px;
+}
+
+p:empty {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.container :first-child {
+  font-weight: bold;
+}
+
+.container :last-child {
+  text-decoration: underline;
+}
