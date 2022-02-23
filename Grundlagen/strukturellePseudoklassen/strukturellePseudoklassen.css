@@ -15,3 +15,39 @@ p:empty {
 .container :last-child {
   text-decoration: underline;
 }
+
+.container :nth-child(5) {
+  color: red;
+}
+
+.container :nth-child(even) {
+  background-color: grey;
+}
+
+.container :nth-child(odd) {
+  background-color: blue;
+}
+
+.container :nth-child(3n+1) {
+  text-decoration: line-through;
+}
+
+.container :nth-last-child(5) {
+  color: red;
+}
+
+.container :nth-last-child(even) {
+  width: 200px;
+}
+
+.container :nth-last-child(odd) {
+  width: 400px;
+}
+
+.container :nth-last-child(3n+1) {
+  width: 600px;
+}
+
+body :only-child {
+  border: 5px solid red;
+}
