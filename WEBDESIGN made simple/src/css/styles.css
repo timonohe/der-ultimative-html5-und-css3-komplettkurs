@@ -119,6 +119,7 @@ body {
 
 .logo-link {
   display: inline-block;
+  height: 100%;
 }
 
 /* NAVIGATIONSLEISTE (MOBIL) */
