@@ -302,6 +302,26 @@ section {
   }
 }
 
+/* LEISTUNGEN-BEREICH */
+
+.leistungs-box {
+  background-color: #3D3F45;
+  text-align: center;
+  color: #FFF;
+  padding: 1rem 3rem 2.5rem;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  margin-left: 1rem;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  margin-right: 1rem;
+}
+
 /*
   GRID-SYSTEM (SICHTBARKEIT)
 
