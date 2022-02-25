@@ -55,6 +55,25 @@ section {
   cursor: pointer;
 }
 
+.btn-typ-1:hover {
+  background-color: #A62C21;
+  border: 2px solid #FFF;
+  cursor: pointer;
+}
+
+.btn-typ-2 {
+  border: 2px solid #FFF;
+  background-color: transparent;
+  color: #FFF;
+  padding: .4rem .6rem;
+}
+
+.btn-typ-2:hover {
+  color: #A62C21;
+  font-weight: bold;
+  border: 2px solid #A62C21;
+}
+
 .intro-container {
   text-align: center;
   width: 80%;
@@ -329,10 +348,9 @@ section {
 
 .leistung-ansehen-btn {
   text-decoration: none;
+  display: inline-block;
   height: 40px;
   width: 40%;
-  border: 2px solid #FFF;
-  display: inline-block;
   padding-top: .5rem;
   margin-top: 1rem;
 }
@@ -351,7 +369,6 @@ section {
 
 .leistung-ansehen-btn:hover {
   color: #A62C21;
-  text-decoration: none;
   font-weight: bold;
   border: 2px solid #A62C21;
 }
