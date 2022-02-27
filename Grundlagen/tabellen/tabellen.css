@@ -1,0 +1,18 @@
+table {
+  margin-bottom: 2rem;
+}
+
+/* border, border-collapse und border-spacing */
+
+#test01, #test01 td, #test01 th,
+#test02, #test02 td, #test02 th {
+  border: 1px solid black;
+}
+
+#test01, #test01 td, #test01 th {
+    border-collapse: collapse;
+}
+
+#test02, #test02 td, #test02 th {
+  border-spacing: 10px;
+}
