@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Raleway/raleway-v26-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/Raleway/raleway-v26-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Raleway/raleway-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Raleway/raleway-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Raleway/raleway-v26-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Raleway/raleway-v26-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-family: "Raleway", "Helvetica Neue", "Arial", sans-serif;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+tr {
+  height: 2rem;
+}
+
+tr:nth-of-type(even) {
+  background-color: #efefef;
+}
+
+th {
+  text-align: left;
+}
+
+th, td {
+  padding: .8rem;
+}
+
+thead {
+  background-color: grey;
+}
+
+tbody {
+  border-bottom: 2px solid grey;
+}
+
+tfoot tr:first-of-type td {
+  font-weight: bold;
+}
