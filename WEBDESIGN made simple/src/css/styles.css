@@ -1,7 +1,7 @@
 /* FARBEN
 Blau:         #1F4E8C
 Dunkel Grau:  #3D3F45
-Hell Grau:    #E5E5E5
+Hell Grau:    #F0F0F0
 Rot:          #A62C21
 */
 
@@ -19,7 +19,7 @@ body {
 
 :focus {
   outline: none;
-  box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
+  box-shadow: 0 0 2px 2px #F0F0F0, 0 0 10px #F0F0F0;
 }
 
 section {
@@ -183,12 +183,12 @@ section {
 }
 
 #header-nav ul > li > a:hover {
-  color: #E5E5E5;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
 #header-nav ul > li > a:active {
-  color: #E5E5E5;
+  color: #F0F0F0;
   text-decoration: none;
 }
 
@@ -487,6 +487,31 @@ section {
   #video-bereich video {
     width: 100%;
   }
+}
+
+/* SERVICE-BEREICH */
+
+#service-bereich {
+  background-color: #F0F0F0;
+}
+
+.service-box {
+  text-align: center;
+  width: 80%;
+}
+
+#service-bereich .row:nth-of-type(2) .col-2:first-of-type > .service-box {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#service-bereich .row:nth-of-type(2) .col-2:nth-of-type(2) > .service-box {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-box h1 {
+  font-size: 1.4rem;
 }
 
 /*
