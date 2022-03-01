@@ -514,6 +514,26 @@ section {
   font-size: 1.4rem;
 }
 
+.service-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#guenstig-icon {
+  background: #3D3F45 url("./../img/services-sprite.png") left 0 top 0;
+}
+
+#schnell-icon {
+  background: #3D3F45 url("./../img/services-sprite.png") left -120px top 0;
+}
+
+#modern-icon {
+  background: #3D3F45 url("./../img/services-sprite.png") left 240px top 0;
+}
+
 /*
   GRID-SYSTEM (SICHTBARKEIT)
 
