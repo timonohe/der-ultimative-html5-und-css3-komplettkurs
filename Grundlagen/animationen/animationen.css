@@ -45,3 +45,13 @@ div {
   animation-direction: alternate-reverse;
   animation-play-state: running;
 }
+
+#test04 {
+  position: relative;
+  animation: komplexereAnimation;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  background-color: grey;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
