@@ -547,6 +547,30 @@ section {
   }
 }
 
+/* ÜBER-UNS-BEREICH */
+
+#über-uns-bereich {
+  background-color: #FFF;
+}
+
+#über-uns-container {
+  position: relative;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#über-uns-container > img {
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+#über-uns-container > p {
+  width: 75%;
+  font-size: 1.2rem;
+}
+
 /*
   GRID-SYSTEM (SICHTBARKEIT)
 
