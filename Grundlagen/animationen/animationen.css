@@ -2,12 +2,12 @@ div {
   width: 200px;
   height: 200px;
   background-color: red;
+  margin-bottom: 2rem;
 }
 
 @keyframes farbwechsel {
   /* from { background-color: red; }
   to { background-color: blue; } */
-
   0% { background-color: red; }
   17% { background-color: orange; }
   34% { background-color: yellow; }
@@ -17,7 +17,21 @@ div {
   100% { background-color: violet; }
 }
 
-#test {
+@keyframes komplexereAnimation {
+  0%    { background-color: red;        top: 0;     left: 0;      width: 200px; height: 200px; }
+  25%   { background-color: orange;     top: 0;     left: 400px;  width: 100px; height: 100px; }
+  50%   { background-color: yellow;     top: 400px; left: 400px;  width: 200px; height: 200px; }
+  75%   { background-color: green;      top: 400px; left: 0;      width: 300px; height: 300px; }
+  100%  { background-color: lightblue;  top: 0;     left: 0;      width: 200px; height: 200px; }
+}
+
+#test01 {
   animation: farbwechsel;
+  animation-duration: 4s;
+}
+
+#test02 {
+  position: relative;
+  animation: komplexereAnimation;
   animation-duration: 10s;
 }
