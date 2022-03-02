@@ -35,3 +35,13 @@ div {
   animation: komplexereAnimation;
   animation-duration: 10s;
 }
+
+#test03 {
+  position: relative;
+  animation: komplexereAnimation;
+  animation-duration: 2s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+}
