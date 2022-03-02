@@ -1,0 +1,23 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+@keyframes farbwechsel {
+  /* from { background-color: red; }
+  to { background-color: blue; } */
+
+  0% { background-color: red; }
+  17% { background-color: orange; }
+  34% { background-color: yellow; }
+  51% { background-color: green; }
+  68% { background-color: lightblue; }
+  85% { background-color: indigo; }
+  100% { background-color: violet; }
+}
+
+#test {
+  animation: farbwechsel;
+  animation-duration: 10s;
+}
