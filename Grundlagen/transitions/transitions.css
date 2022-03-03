@@ -4,6 +4,8 @@
   background-color: grey;
   transition-property: width, height, background-color;
   transition-duration: 1s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in-out;
 }
 
 #test01:hover {
