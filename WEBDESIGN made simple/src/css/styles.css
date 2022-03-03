@@ -600,6 +600,42 @@ section {
   }
 }
 
+/* FOOTER */
+
+#footer {
+  background-color: #3D3F45;
+  color: #FFF;
+}
+
+#footer-nav {
+  display: inline-block;
+  float: right;
+}
+
+#footer-nav a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#footer-nav a:hover {
+  color: #F0F0F0;
+}
+
+@media (max-width: 565px) {
+  #footer span {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  #footer-nav {
+    display: block;
+    text-align: center;
+    float: none;
+    text-align: center;
+  }
+}
+
 /*
   GRID-SYSTEM (SICHTBARKEIT)
 
