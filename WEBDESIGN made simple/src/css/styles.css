@@ -641,6 +641,7 @@ section {
 .flex-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -652,6 +653,13 @@ section {
   color: #FFF;
   padding: 2rem 4rem;
   text-align: center;
+  min-height: 600px;
+}
+
+.leistungs-box-empfohlen {
+  flex-basis: 27.5%;
+  min-height: 750px;
+  box-shadow: 0 0 20px 0 #3D3F45;
 }
 
 .leistungs-box > ul {
@@ -660,6 +668,7 @@ section {
 
 .leistungs-box > ul > li {
   list-style-position: inside;
+  margin-bottom: .5rem;
 }
 
 /*
