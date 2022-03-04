@@ -13,16 +13,22 @@ body {
 .flex-container {
   display: flex;
   width: 95%;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #bfddff;
   /* flex-direction: row;
   flex-wrap: wrap-reverse; */
-  flex-flow: row-reverse wrap;
+  /* flex-flow: row-reverse wrap; */
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .flex-container > * {
-  margin: .8rem;
   background-color: #91c4ff;
   width: 200px;
+}
+
+p {
+  margin: 0;
 }
