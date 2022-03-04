@@ -368,7 +368,7 @@ section {
 
 /* LEISTUNGEN-BEREICH */
 
-.leistungs-box {
+.leistungs-teaser-box {
   background-color: #3D3F45;
   text-align: center;
   color: #FFF;
@@ -377,16 +377,16 @@ section {
   margin-bottom: 1.6rem;
 }
 
-.leistungs-box > h2 {
+.leistungs-teaser-box > h2 {
   font-size: 1.4rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
   margin-right: auto;
   margin-left: 1rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
   margin-right: 1rem;
   margin-left: auto;
 }
@@ -420,32 +420,32 @@ section {
 }
 
 @media (max-width: 1366px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 100%;
     margin-bottom: .6rem;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: .5rem;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: .5rem;
   }
 }
 
 @media (max-width: 768px) {
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0;
   }
 }
