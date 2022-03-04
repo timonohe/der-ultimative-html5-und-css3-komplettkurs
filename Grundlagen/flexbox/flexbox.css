@@ -20,8 +20,10 @@ body {
   /* flex-direction: row;
   flex-wrap: wrap-reverse; */
   /* flex-flow: row-reverse wrap; */
-  justify-content: space-around;
-  align-items: baseline;
+  /* justify-content: space-around;
+  align-items: baseline; */
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .flex-container > * {
