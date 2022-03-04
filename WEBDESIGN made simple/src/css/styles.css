@@ -651,7 +651,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #3D3F45;
   flex-basis: 25%;
   color: #FFF;
@@ -662,13 +662,14 @@ section {
 
 .leistungs-box-empfohlen {
   flex-basis: 27.5%;
-  min-height: 750px;
+  min-height: 720px;
   box-shadow: 0 0 20px 0 #3D3F45;
   font-size: 1.05rem;
 }
 
 .leistungs-box h1 {
   margin-bottom: 0;
+  margin-top: 1.5rem;
 }
 
 .leistungs-box ul {
@@ -685,6 +686,11 @@ section {
   height: 2.5rem;
   font-size: 1rem;
   margin-top: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.leistung-auswählen-btn:hover {
+  font-weight: normal;
 }
 
 /*
