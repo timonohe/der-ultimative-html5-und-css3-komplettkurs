@@ -74,10 +74,10 @@ section {
   color: #FFF;
   padding: .4rem .6rem;
   cursor: pointer;
+  transition: border .5s ease-in-out;
 }
 
 .btn-typ-1:hover {
-  background-color: #A62C21;
   border: 2px solid #FFF;
   cursor: pointer;
 }
@@ -87,12 +87,27 @@ section {
   background-color: transparent;
   color: #FFF;
   padding: .4rem .6rem;
+  transition: color .5s ease-in-out, border .5s ease-in-out;
 }
 
 .btn-typ-2:hover {
   color: #A62C21;
   font-weight: bold;
   border: 2px solid #A62C21;
+}
+
+.btn-typ-3 {
+  border: 2px solid #3D3F45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3D3F45;
+  cursor: pointer;
+  transition: border .5s ease-in-out, color .5s ease-in-out;
+}
+
+.btn-typ-3:hover {
+  border: 2px solid #A62C21;
+  color: #A62C21;
 }
 
 .intro-container {
@@ -452,7 +467,6 @@ section {
 
 .leistung-ansehen-btn:hover {
   color: #A62C21;
-  font-weight: bold;
   border: 2px solid #A62C21;
 }
 
@@ -557,6 +571,12 @@ section {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 1s;
+}
+
+.service-icon:hover {
+  transform: rotateZ(360deg);
+
 }
 
 #guenstig-icon {
@@ -568,7 +588,7 @@ section {
 }
 
 #modern-icon {
-  background: #3D3F45 url("./../img/services-sprite.png") left 240px top 0;
+  background: #3D3F45 url("./../img/services-sprite.png") left -240px top 0;
 }
 
 @media (max-width: 768px) {
@@ -846,11 +866,11 @@ section {
   font-size: 1rem;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
   color: #3D3F45;
+  transition: border .5s ease-in-out;
 }
 
-#kontakt-formular input:hover, #kontakt-formular input:focus,
-#kontakt-formular textarea:hover, #kontakt-formular textarea:focus,
-#kontakt-formular button:hover {
+#kontakt-formular input:hover,
+#kontakt-formular textarea:hover {
   border: 2px solid #A62C21;
 }
 
@@ -859,18 +879,9 @@ section {
   resize: none;
 }
 
-.btn-typ-3 {
-  border: 2px solid #3D3F45;
-  background-color: transparent;
-  font-size: 1rem;
-  color: #3D3F45;
+#absenden-button {
   width: 150px;
   height: 39px;
-  cursor: pointer;
-}
-
-#kontakt-formular button:hover {
-  color: #A62C21;
 }
 
 @media (max-width: 768px) {
