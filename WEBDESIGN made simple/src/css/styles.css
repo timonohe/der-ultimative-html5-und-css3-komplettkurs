@@ -605,6 +605,7 @@ section {
 #footer {
   background-color: #3D3F45;
   color: #FFF;
+  margin-top: auto;
 }
 
 #footer-nav {
@@ -778,6 +779,67 @@ section {
 
 .leistung-auswählen-btn:hover {
   font-weight: normal;
+}
+
+/* KONTAKT-SEITE */
+
+#kontakt-formular {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+  #kontakt-formular {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #kontakt-formular {
+    width: 100%;
+  }
+}
+
+#kontakt-formular input, #kontakt-formular textarea {
+  width: 100%;
+  border: 2px solid #3D3F45;
+  padding: .5rem;
+  font-size: 1rem;
+  font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
+  color: #3D3F45;
+}
+
+#kontakt-formular input:hover, #kontakt-formular input:focus,
+#kontakt-formular textarea:hover, #kontakt-formular textarea:focus,
+#kontakt-formular button:hover {
+  border: 2px solid #A62C21;
+}
+
+#kontakt-formular textarea {
+  height: 100px;
+  resize: none;
+}
+
+.btn-typ-3 {
+  border: 2px solid #3D3F45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3D3F45;
+  width: 150px;
+  height: 39px;
+  cursor: pointer;
+}
+
+#kontakt-formular button:hover {
+  color: #A62C21;
+}
+
+@media (max-width: 768px) {
+  #kontakt-formular button {
+    width: 100%;
+  }
 }
 
 /*
