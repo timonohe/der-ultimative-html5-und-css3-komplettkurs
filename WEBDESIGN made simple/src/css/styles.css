@@ -842,6 +842,14 @@ section {
   }
 }
 
+/* IMPRESSUM */
+
+#impressum a {
+  color: #3D3F45;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /*
   GRID-SYSTEM (SICHTBARKEIT)
 
