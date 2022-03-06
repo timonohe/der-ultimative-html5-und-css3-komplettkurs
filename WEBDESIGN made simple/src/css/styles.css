@@ -366,6 +366,29 @@ section {
   }
 }
 
+/* ANIMIERTES LOGO */
+
+#animiertes-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: #3D3F45;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+#animiertes-logo > img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* LEISTUNGEN-BEREICH */
 
 .leistungs-teaser-box {
