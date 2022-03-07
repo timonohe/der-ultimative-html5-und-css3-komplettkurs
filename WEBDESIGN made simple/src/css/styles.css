@@ -863,6 +863,10 @@ section {
 
 /* KONTAKT-SEITE */
 
+#kontakt-bereich {
+  padding-top: 1rem;
+}
+
 #kontakt-formular {
   width: 80%;
   margin-left: auto;
@@ -914,6 +918,10 @@ section {
 }
 
 /* IMPRESSUM */
+
+#impressum {
+  padding-top: 1rem;
+}
 
 #impressum a {
   color: #3D3F45;
