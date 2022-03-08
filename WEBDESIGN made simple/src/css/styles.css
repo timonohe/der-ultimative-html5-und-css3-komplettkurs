@@ -8,9 +8,8 @@
   --weiss: #FFF;
 
   --primaere-schriftart: Raleway;
-  --sekundaere-schriftart: Lato;
-  --tertiaere-schriftart: "Helvetica Neue";
-  --quartaere-schriftart: Arial;
+  --sekundaere-schriftart: "Helvetica Neue";
+  --tertiaere-schriftart: Arial;
   --fallback-schriftart: sans-serif;
 
   --border-style: 2px solid;
@@ -23,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--primaere-schriftart, --sekundaere-schriftart, --tertiaere-schriftart, --quartaere-schriftart, --fallback-schriftart);
+  font-family: var(--primaere-schriftart, --sekundaere-schriftart, --tertiaere-schriftart, --fallback-schriftart);
 }
 
 * {
@@ -246,7 +245,6 @@ section {
 #mobile-nav-dropdown {
   cursor: pointer;
   position: relative;
-  display: inline-block;
   float: right;
 }
 
@@ -701,7 +699,6 @@ section {
 }
 
 #footer-nav {
-  display: inline-block;
   float: right;
 }
 
@@ -899,7 +896,7 @@ section {
   border: var(--border-style) var(--dunkel-grau);
   padding: .5rem;
   font-size: 1rem;
-  font-family: var(--primaere-schriftart, --sekundaere-schriftart, --tertiaere-schriftart, --quartaere-schriftart, --fallback-schriftart);
+  font-family: var(--primaere-schriftart, --sekundaere-schriftart, --tertiaere-schriftart, --fallback-schriftart);
   color: var(--dunkel-grau);
   transition: var(--border-transition);
 }
