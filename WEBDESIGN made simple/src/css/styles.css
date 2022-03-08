@@ -1,11 +1,21 @@
-/* FARBEN
-Blau:         #1F4E8C
-Dunkel Grau:  #3D3F45
-Hell Grau:    #F0F0F0
-Rot:          #A62C21
-*/
-
 /* GLOBAL */
+
+:root {
+  --blau: #1F4E8C;
+  --dunkel-grau: #3D3F45;
+  --hell-grau: #F0F0F0;
+  --rot: #A62C21;
+  --weiss: #FFF;
+
+  --primaere-schriftart: Raleway;
+  --sekundaere-schriftart: Lato;
+  --tertiaere-schriftart: "Helvetica Neue";
+  --quartaere-schriftart: Arial;
+  --fallback-schriftart: sans-serif;
+
+  --border-style: 2px solid;
+  --border-transition: border .5s ease-in-out;
+}
 
 html {
   font-size: 16px;
@@ -13,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
+  font-family: var(--primaere-schriftart, --sekundaere-schriftart, --tertiaere-schriftart, --quartaere-schriftart, --fallback-schriftart);
 }
 
 * {
@@ -48,7 +58,7 @@ section {
 
 :focus {
   outline: none;
-  box-shadow: 0 0 2px 2px #F0F0F0, 0 0 10px #F0F0F0;
+  box-shadow: 0 0 2px 2px var(--hell-grau), 0 0 10px var(--hell-grau);
 }
 
 /* GENERELLES */
@@ -60,7 +70,7 @@ section {
 }
 
 .active {
-  background-color: #A62C21 !important;
+  background-color: var(--rot) !important;
 }
 
 .wichtiger-text {
@@ -117,45 +127,45 @@ section {
 /* BUTTONS */
 
 .btn-typ-1 {
-  background-color: #A62C21;
-  border: 2px solid #A62C21;
-  color: #FFF;
+  background-color: var(--rot);
+  border: var(--border-style) var(--rot);
+  color: var(--weiss);
   padding: .4rem .6rem;
   cursor: pointer;
-  transition: border .5s ease-in-out;
+  transition: var(--border-transition);
 }
 
 .btn-typ-1:hover {
-  border: 2px solid #FFF;
+  border: var(--border-style) var(--weiss);
   cursor: pointer;
 }
 
 .btn-typ-2 {
   background-color: transparent;
-  border: 2px solid #FFF;
-  color: #FFF;
+  border: var(--border-style) var(--weiss);
+  color: var(--weiss);
   padding: .4rem .6rem;
-  transition: color .5s ease-in-out, border .5s ease-in-out;
+  transition: color .5s ease-in-out, var(--border-transition);
 }
 
 .btn-typ-2:hover {
-  color: #A62C21;
+  color: var(--rot);
   font-weight: bold;
-  border: 2px solid #A62C21;
+  border: var(--border-style) var(--rot);
 }
 
 .btn-typ-3 {
   background-color: transparent;
-  border: 2px solid #3D3F45;
-  color: #3D3F45;
+  border: var(--border-style) var(--dunkel-grau);
+  color: var(--dunkel-grau);
   cursor: pointer;
   font-size: 1rem;
-  transition: border .5s ease-in-out, color .5s ease-in-out;
+  transition: var(--border-transition), color .5s ease-in-out;
 }
 
 .btn-typ-3:hover {
-  border: 2px solid #A62C21;
-  color: #A62C21;
+  border: var(--border-style) var(--rot);
+  color: var(--rot);
   font-weight: normal;
 }
 
@@ -164,7 +174,7 @@ section {
 #header-nav {
   width: 100%;
   height: 50px;
-  background-color: #3D3F45;
+  background-color: var(--dunkel-grau);
   position: relative;
   font-weight: bold;
   font-size: 1.1rem;
@@ -196,22 +206,22 @@ section {
 }
 
 #header-nav ul > li > a:link {
-  color: #FFF;
+  color: var(--weiss);
   text-decoration: none;
 }
 
 #header-nav ul > li > a:visited {
-  color: #FFF;
+  color: var(--weiss);
   text-decoration: none;
 }
 
 #header-nav ul > li > a:active {
-  color: #F0F0F0;
+  color: var(--hell-grau);
   text-decoration: none;
 }
 
 #header-nav ul > li > a:hover {
-  color: #F0F0F0;
+  color: var(--hell-grau);
   text-decoration: none;
 }
 
@@ -245,10 +255,10 @@ section {
 }
 
 #mobile-nav-button {
-  color: #FFF;
+  color: var(--weiss);
   float: right;
   font-size: 2rem;
-  border: 2px solid #FFF;
+  border: var(--border-style) var(--weiss);
   width: 37px;
   height: 37px;
   position: relative;
@@ -271,7 +281,7 @@ section {
 
 #mobile-nav-content > ul > li {
   display: block;
-  background-color: #3D3F45;
+  background-color: var(--dunkel-grau);
   height: 50px;
   padding: 0 1.2rem;
   text-align: center;
@@ -320,13 +330,13 @@ section {
 
 #newsletter-bereich {
   width: 100%;
-  background-color: #3D3F45;
+  background-color: var(--dunkel-grau);
   padding-top: 0;
   padding-bottom: 0;
 }
 
 #nb-werbetext {
-  color: #FFF;
+  color: var(--weiss);
   font-size: 1.2rem;
 }
 
@@ -339,7 +349,7 @@ section {
 #nb-email-input {
   width: 78%;
   height: 35px;
-  border: 2px solid #FFF;
+  border: var(--border-style) var(--weiss);
   padding: .4rem;
 }
 
@@ -410,7 +420,7 @@ section {
   align-items: center;
   height: 150px;
   width: 150px;
-  background-color: #3D3F45;
+  background-color: var(--dunkel-grau);
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -439,9 +449,9 @@ section {
 }
 
 .leistungs-teaser-box {
-  background-color: #3D3F45;
+  background-color: var(--dunkel-grau);
   text-align: center;
-  color: #FFF;
+  color: var(--weiss);
   padding: 1rem 3rem 2.5rem;
   width: 60%;
   margin-bottom: 1.6rem;
@@ -472,20 +482,20 @@ section {
 }
 
 .leistung-ansehen-btn:link {
-  color: #FFF;
+  color: var(--weiss);
 }
 
 .leistung-ansehen-btn:visited {
-  color: #FFF;
+  color: var(--weiss);
 }
 
 .leistung-ansehen-btn:active {
-  color: #FFF;
+  color: var(--weiss);
 }
 
 .leistung-ansehen-btn:hover {
-  color: #A62C21;
-  border: 2px solid #A62C21;
+  color: var(--rot);
+  border: var(--border-style) var(--rot);
 }
 
 @media (max-width: 1366px) {
@@ -528,8 +538,8 @@ section {
 /* VIDEO-BEREICH */
 
 #video-bereich {
-  background-color: #3D3F45;
-  color: #FFF;
+  background-color: var(--dunkel-grau);
+  color: var(--weiss);
 }
 
 #video-bereich video {
@@ -567,7 +577,7 @@ section {
 /* SERVICE-BEREICH */
 
 #service-bereich {
-  background-color: #F0F0F0;
+  background-color: var(--hell-grau);
 }
 
 .service-box {
@@ -604,15 +614,15 @@ section {
 }
 
 #guenstig-icon {
-  background: #3D3F45 url("./../img/services-sprite.png") left 0 top 0;
+  background: var(--dunkel-grau) url("./../img/services-sprite.png") left 0 top 0;
 }
 
 #schnell-icon {
-  background: #3D3F45 url("./../img/services-sprite.png") left -120px top 0;
+  background: var(--dunkel-grau) url("./../img/services-sprite.png") left -120px top 0;
 }
 
 #modern-icon {
-  background: #3D3F45 url("./../img/services-sprite.png") left -240px top 0;
+  background: var(--dunkel-grau) url("./../img/services-sprite.png") left -240px top 0;
 }
 
 @media (max-width: 768px) {
@@ -631,7 +641,7 @@ section {
 /* ÜBER-UNS-BEREICH */
 
 #über-uns-bereich {
-  background-color: #FFF;
+  background-color: var(--weiss);
 }
 
 #über-uns-container {
@@ -685,8 +695,8 @@ section {
 /* FOOTER */
 
 #footer {
-  background-color: #3D3F45;
-  color: #FFF;
+  background-color: var(--dunkel-grau);
+  color: var(--weiss);
   margin-top: auto;
 }
 
@@ -697,11 +707,11 @@ section {
 
 #footer-nav a {
   text-decoration: none;
-  color: #FFF;
+  color: var(--weiss);
 }
 
 #footer-nav a:hover {
-  color: #F0F0F0;
+  color: var(--hell-grau);
 }
 
 @media (max-width: 565px) {
@@ -727,7 +737,7 @@ section {
 }
 
 .leistung:nth-of-type(even) {
-  background-color: #F0F0F0;
+  background-color: var(--hell-grau);
 }
 
 .flex-container {
@@ -749,9 +759,9 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #3D3F45;
+  background-color: var(--dunkel-grau);
   flex-basis: 25%;
-  color: #FFF;
+  color: var(--weiss);
   padding: 2rem 4rem;
   text-align: center;
   min-height: 600px;
@@ -760,7 +770,7 @@ section {
 .leistungs-box-empfohlen {
   flex-basis: 27.5%;
   min-height: 720px;
-  box-shadow: 0 0 20px 0 #3D3F45;
+  box-shadow: 0 0 20px 0 var(--dunkel-grau);
   font-size: 1.05rem;
 }
 
@@ -886,17 +896,17 @@ section {
 
 #kontakt-formular input, #kontakt-formular textarea {
   width: 100%;
-  border: 2px solid #3D3F45;
+  border: var(--border-style) var(--dunkel-grau);
   padding: .5rem;
   font-size: 1rem;
-  font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
-  color: #3D3F45;
-  transition: border .5s ease-in-out;
+  font-family: var(--primaere-schriftart, --sekundaere-schriftart, --tertiaere-schriftart, --quartaere-schriftart, --fallback-schriftart);
+  color: var(--dunkel-grau);
+  transition: var(--border-transition);
 }
 
 #kontakt-formular input:hover,
 #kontakt-formular textarea:hover {
-  border: 2px solid #A62C21;
+  border: var(--border-style) var(--rot);
 }
 
 #kontakt-formular textarea {
@@ -922,7 +932,7 @@ section {
 }
 
 #impressum a {
-  color: #3D3F45;
+  color: var(--dunkel-grau);
   text-decoration: none;
   font-weight: bold;
 }
