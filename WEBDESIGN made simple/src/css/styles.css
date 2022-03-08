@@ -7,10 +7,13 @@ Rot:          #A62C21
 
 /* GLOBAL */
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
-  font-size: 16px;
 }
 
 * {
